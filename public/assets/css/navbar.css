@@ -1,0 +1,214 @@
+/*
+    NAVBAR STYLE
+    PRESENT IN : base.html.twig
+*/
+
+/* --------------------------------------------------- */
+/* ------------------------- Common to both navigation */
+/* --------------------------------------------------- */
+.first-nav-item {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.last-nav-item {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-search {
+    padding-left: 40px;
+}
+
+/*.accent-brow {*/
+/*    color: #6A3E2A;*/
+/*}*/
+
+/* --------------------------------------------------- */
+/* --------------------------------- LVL 2 : brown nav */
+/* --------------------------------------------------- */
+
+.nav-l2 {
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+
+    background-color: #6A3E2A;
+}
+
+.nav-l2 ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-l2 li {
+    list-style: none;
+}
+
+.nav-l2 a {
+    text-decoration: none;
+    color: #EFDDC9;
+}
+
+.nav-l2 a:hover {
+    color: #fff;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------- LVL 1 : white nav */
+/* --------------------------------------------------- */
+
+.nav-l1 {
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: #FFF6F1;
+}
+
+.nav-l1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-l1 li {
+    list-style: none;
+}
+
+.nav-l1 a {
+    text-decoration: none;
+    color: #343131;
+}
+
+.nav-logo {
+    width: 30px;
+    height: 30px;
+}
+
+#main-logo {
+    font-size: 30px;
+}
+
+.nav-l1 a:hover {
+    color: #6A3E2A;
+}
+
+.test {
+    padding-right: 50px;
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------- Mobile mode */
+/* --------------------------------------------------- */
+
+@media (max-width: 1100px) {
+    .nav-l1 a, .nav-l2 a {
+        font-size: 14px;
+    }
+
+    #main-logo {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    /* Display management */
+    .to-hide {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    /* color change */
+    .nav-l1 {
+        background-color: #6A3E2A;
+    }
+
+    /* Logo changes */
+    #main-logo {
+        font-size: 24px;
+        color: #EFDDC9;
+    }
+
+    #main-logo .accent-brown {
+        color: #EFDDC9;
+    }
+
+    #main-logo.first-nav-item {
+        padding-left: 10px;
+    }
+}
+
+/* --------------------------------------------------- */
+/* ------------------------------------------- Sidebar */
+/* --------------------------------------------------- */
+
+
+#sidebar {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 0vw;
+    display: flex;
+
+    overflow: hidden;
+    transition: width 150ms ease 0ms;
+}
+
+#sidebar-75 {
+    width: 75vw;
+    background-color: #FFF6F1;
+    border: 1px solid #6A3E2A;
+}
+
+#sidebar-window {
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#sidebar ul li {
+    list-style: none;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #6A3E2A;
+}
+
+#side-l2 a, #side-l3 a {
+    opacity: 0.7;
+}
+
+#side-l1 li {
+    border-bottom: 1px solid #6A3E2A;
+    padding: 1rem;
+}
+
+#side-l2 li {
+    padding: 0.5em;
+}
+
+#side-l3 {
+    position: absolute;
+    bottom: 0;
+}
+
+#side-l3 a {
+    display: flex;
+    width: 75vw;
+    padding: 1rem;
+    border-top: 1px solid #6A3E2A;
+}

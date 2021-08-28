@@ -1,0 +1,24 @@
+/*
+
+    Common CSS
+    present in : each pages
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+html {
+    background-color: #f5f1f1;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Color related classes */

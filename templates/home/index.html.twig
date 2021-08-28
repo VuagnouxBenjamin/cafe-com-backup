@@ -1,9 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Votre expert café fair trade & bio sourcé - café.com{% endblock %}
 
 {% block body %}
-
+    <link rel="stylesheet" href="{{ asset("assets/css/hero.css") }}" type="text/css">
+    <div id="hero-banner">
+        <div id="hero-text">
+            <h2>Découvrez un nouveau café exotique</h2>
+            <p id="hero-description">L'arôme délicat de la noix de coco donne de la douceur au goût riche du café. Le duo exotique vous plongera
+                dans l'atmosphère de vacances à la plage et vous transportera sur la côte paradisiaque.</p>
+            <a href="#" class="hero-btn">Voir la promotion</a>
+        </div>
+    </div>
+    <div id="hero-banner-mobile">
+        <h2>
+            Les cafés du moment...
+        </h2>
+    </div>
 
 
 {% endblock %}

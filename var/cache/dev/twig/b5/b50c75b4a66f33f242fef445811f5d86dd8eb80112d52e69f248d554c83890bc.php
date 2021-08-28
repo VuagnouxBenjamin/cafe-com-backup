@@ -65,7 +65,7 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello HomeController!";
+        echo "Votre expert café fair trade & bio sourcé - café.com";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -85,7 +85,22 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "
+        echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/hero.css"), "html", null, true);
+        echo "\" type=\"text/css\">
+    <div id=\"hero-banner\">
+        <div id=\"hero-text\">
+            <h2>Découvrez un nouveau café exotique</h2>
+            <p id=\"hero-description\">L'arôme délicat de la noix de coco donne de la douceur au goût riche du café. Le duo exotique vous plongera
+                dans l'atmosphère de vacances à la plage et vous transportera sur la côte paradisiaque.</p>
+            <a href=\"#\" class=\"hero-btn\">Voir la promotion</a>
+        </div>
+    </div>
+    <div id=\"hero-banner-mobile\">
+        <h2>
+            Les cafés du moment...
+        </h2>
+    </div>
 
 
 ";
@@ -116,10 +131,23 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Votre expert café fair trade & bio sourcé - café.com{% endblock %}
 
 {% block body %}
-
+    <link rel=\"stylesheet\" href=\"{{ asset(\"assets/css/hero.css\") }}\" type=\"text/css\">
+    <div id=\"hero-banner\">
+        <div id=\"hero-text\">
+            <h2>Découvrez un nouveau café exotique</h2>
+            <p id=\"hero-description\">L'arôme délicat de la noix de coco donne de la douceur au goût riche du café. Le duo exotique vous plongera
+                dans l'atmosphère de vacances à la plage et vous transportera sur la côte paradisiaque.</p>
+            <a href=\"#\" class=\"hero-btn\">Voir la promotion</a>
+        </div>
+    </div>
+    <div id=\"hero-banner-mobile\">
+        <h2>
+            Les cafés du moment...
+        </h2>
+    </div>
 
 
 {% endblock %}

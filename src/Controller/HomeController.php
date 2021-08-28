@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
+use App\Entity\Categories;
 use App\Entity\MailList;
 use App\Form\MailListType;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,8 +17,14 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function index(Request $request): Response
+    public function index(Request $request, EntityManagerInterface $em): Response
     {
+        // ------------------------------------
+        // -------------             CATEGORIES
+        // ------------------------------------
+        $cat_repository = $em->getRepository(Categories::class);
+        $categories = $cat_repository->findSixLast();
+
 
         // ------------------------------------
         // -------------                 FOOTER
@@ -33,12 +41,14 @@ class HomeController extends AbstractController
             $entityManager->flush();
         }
 
+
         // ------------------------------------
         // -------------                 RENDER
         // ------------------------------------
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'email_form' => $email_form->createView(),
+            'categories' => $categories,
         ]);
     }
 }

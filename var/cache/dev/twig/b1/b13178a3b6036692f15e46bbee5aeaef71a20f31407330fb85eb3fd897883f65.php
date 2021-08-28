@@ -120,7 +120,10 @@ class __TwigTemplate_ccc1a362447d6bd975ef11daf7ef0a6cea075ec7489739c86d7d70c1721
                              alt=\"Cliquez ici pour ouvrir la navigation mobile\"></a>
         </div>
         <div class=\"nav-left\">
-            <ul><a href=\"#\" class=\"first-nav-item\" id=\"main-logo\">Café<span class=\"accent-brow\">.com</span></a></ul>
+            <ul><a href=\"";
+        // line 60
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\" class=\"first-nav-item\" id=\"main-logo\">Café<span class=\"accent-brow\">.com</span></a></ul>
         </div>
         <div class=\"to-hide\">
             <ul class=\"nav-center\">
@@ -198,40 +201,48 @@ class __TwigTemplate_ccc1a362447d6bd975ef11daf7ef0a6cea075ec7489739c86d7d70c1721
         // line 122
         echo "
 ";
-        // line 124
-        echo "<link rel=\"stylesheet\" href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/footer.css"), "html", null, true);
-        echo "\">
-<footer id=\"main-footer\">
-    <h2 class=\"footer-title\">Recevez l’actualité café.com par e-mail</h2>
-    <p class=\"footer-subtitle\">Inscrivez-vous ici</p>
-    ";
-        // line 128
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 128, $this->source); })()), 'form_start');
-        echo "
-    <div class=\"footer-input\">
-        ";
-        // line 130
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 130, $this->source); })()), "email", [], "any", false, false, false, 130), 'widget');
-        echo "
-        <button type=\"submit\" class=\"footer-submit\">S'abonner</button>
-    </div>
-    ";
-        // line 133
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 133, $this->source); })()), 'form_end');
-        echo "
-    <p class=\"footer-small\">En cliquant sur S'abonner vous acceptez <br> les <a href=\"#\" class=\"underline-a\">conditions
-            d'utilisations.</a></p>
-    <div id=\"footer-links\">
-        <ul>
-            <li><a href=\"#\">Conditions générales de vente</a></li>
-            <li><a href=\"#\">Charte de protection</a></li>
-            <li><a href=\"#\">Recrutement</a></li>
-            <li><a href=\"#\">Contacts</a></li>
-        </ul>
-    </div>
-</footer>
+        // line 123
+        if (array_key_exists("email_form", $context)) {
+            // line 124
+            echo "    ";
+            // line 125
+            echo "    <link rel=\"stylesheet\" href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/footer.css"), "html", null, true);
+            echo "\">
 
+    <footer id=\"main-footer\">
+        <h2 class=\"footer-title\">Recevez l’actualité café.com par e-mail</h2>
+        <p class=\"footer-subtitle\">Inscrivez-vous ici</p>
+        ";
+            // line 130
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 130, $this->source); })()), 'form_start');
+            echo "
+        <div class=\"footer-input\">
+            ";
+            // line 132
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 132, $this->source); })()), "email", [], "any", false, false, false, 132), 'widget');
+            echo "
+            <button type=\"submit\" class=\"footer-submit\">S'abonner</button>
+        </div>
+        ";
+            // line 135
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["email_form"]) || array_key_exists("email_form", $context) ? $context["email_form"] : (function () { throw new RuntimeError('Variable "email_form" does not exist.', 135, $this->source); })()), 'form_end');
+            echo "
+        <p class=\"footer-small\">En cliquant sur S'abonner vous acceptez <br> les <a href=\"#\" class=\"underline-a\">conditions
+                d'utilisations.</a></p>
+        <div id=\"footer-links\">
+            <ul>
+                <li><a href=\"#\">Conditions générales de vente</a></li>
+                <li><a href=\"#\">Charte de protection</a></li>
+                <li><a href=\"#\">Recrutement</a></li>
+                <li><a href=\"#\">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+";
+        }
+        // line 148
+        echo "
 </body>
 </html>
 ";
@@ -336,7 +347,7 @@ class __TwigTemplate_ccc1a362447d6bd975ef11daf7ef0a6cea075ec7489739c86d7d70c1721
 
     public function getDebugInfo()
     {
-        return array (  310 => 121,  300 => 25,  298 => 24,  288 => 23,  278 => 12,  276 => 11,  266 => 10,  247 => 7,  221 => 133,  215 => 130,  210 => 128,  202 => 124,  199 => 122,  197 => 121,  192 => 118,  164 => 91,  155 => 84,  146 => 78,  139 => 74,  118 => 56,  89 => 31,  84 => 29,  80 => 26,  78 => 23,  72 => 19,  65 => 15,  62 => 13,  59 => 10,  55 => 7,  47 => 1,);
+        return array (  321 => 121,  311 => 25,  309 => 24,  299 => 23,  289 => 12,  287 => 11,  277 => 10,  258 => 7,  245 => 148,  229 => 135,  223 => 132,  218 => 130,  209 => 125,  207 => 124,  205 => 123,  202 => 122,  200 => 121,  195 => 118,  167 => 91,  158 => 84,  149 => 78,  142 => 74,  125 => 60,  118 => 56,  89 => 31,  84 => 29,  80 => 26,  78 => 23,  72 => 19,  65 => 15,  62 => 13,  59 => 10,  55 => 7,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -400,7 +411,7 @@ class __TwigTemplate_ccc1a362447d6bd975ef11daf7ef0a6cea075ec7489739c86d7d70c1721
                              alt=\"Cliquez ici pour ouvrir la navigation mobile\"></a>
         </div>
         <div class=\"nav-left\">
-            <ul><a href=\"#\" class=\"first-nav-item\" id=\"main-logo\">Café<span class=\"accent-brow\">.com</span></a></ul>
+            <ul><a href=\"{{ path(\"home\") }}\" class=\"first-nav-item\" id=\"main-logo\">Café<span class=\"accent-brow\">.com</span></a></ul>
         </div>
         <div class=\"to-hide\">
             <ul class=\"nav-center\">
@@ -463,28 +474,31 @@ class __TwigTemplate_ccc1a362447d6bd975ef11daf7ef0a6cea075ec7489739c86d7d70c1721
 
 {% block body %}{% endblock %}
 
-{# Footer CSS #}
-<link rel=\"stylesheet\" href=\"{{ asset('assets/css/footer.css') }}\">
-<footer id=\"main-footer\">
-    <h2 class=\"footer-title\">Recevez l’actualité café.com par e-mail</h2>
-    <p class=\"footer-subtitle\">Inscrivez-vous ici</p>
-    {{ form_start(email_form) }}
-    <div class=\"footer-input\">
-        {{ form_widget(email_form.email ) }}
-        <button type=\"submit\" class=\"footer-submit\">S'abonner</button>
-    </div>
-    {{ form_end(email_form) }}
-    <p class=\"footer-small\">En cliquant sur S'abonner vous acceptez <br> les <a href=\"#\" class=\"underline-a\">conditions
-            d'utilisations.</a></p>
-    <div id=\"footer-links\">
-        <ul>
-            <li><a href=\"#\">Conditions générales de vente</a></li>
-            <li><a href=\"#\">Charte de protection</a></li>
-            <li><a href=\"#\">Recrutement</a></li>
-            <li><a href=\"#\">Contacts</a></li>
-        </ul>
-    </div>
-</footer>
+{% if email_form is defined %}
+    {# Footer CSS #}
+    <link rel=\"stylesheet\" href=\"{{ asset('assets/css/footer.css') }}\">
+
+    <footer id=\"main-footer\">
+        <h2 class=\"footer-title\">Recevez l’actualité café.com par e-mail</h2>
+        <p class=\"footer-subtitle\">Inscrivez-vous ici</p>
+        {{ form_start(email_form) }}
+        <div class=\"footer-input\">
+            {{ form_widget(email_form.email ) }}
+            <button type=\"submit\" class=\"footer-submit\">S'abonner</button>
+        </div>
+        {{ form_end(email_form) }}
+        <p class=\"footer-small\">En cliquant sur S'abonner vous acceptez <br> les <a href=\"#\" class=\"underline-a\">conditions
+                d'utilisations.</a></p>
+        <div id=\"footer-links\">
+            <ul>
+                <li><a href=\"#\">Conditions générales de vente</a></li>
+                <li><a href=\"#\">Charte de protection</a></li>
+                <li><a href=\"#\">Recrutement</a></li>
+                <li><a href=\"#\">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+{% endif %}
 
 </body>
 </html>

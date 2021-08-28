@@ -15,5 +15,10 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
+    'produits_index' => [[], ['_controller' => 'App\\Controller\\ProduitsController::index'], [], [['text', '/produits/']], [], []],
+    'produits_new' => [[], ['_controller' => 'App\\Controller\\ProduitsController::new'], [], [['text', '/produits/new']], [], []],
+    'produits_show' => [['id'], ['_controller' => 'App\\Controller\\ProduitsController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/produits']], [], []],
+    'produits_edit' => [['id'], ['_controller' => 'App\\Controller\\ProduitsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/produits']], [], []],
+    'produits_delete' => [['id'], ['_controller' => 'App\\Controller\\ProduitsController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/produits']], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
 ];

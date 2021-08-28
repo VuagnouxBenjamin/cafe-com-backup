@@ -3,19 +3,53 @@
 {% block title %}Votre expert café fair trade & bio sourcé - café.com{% endblock %}
 
 {% block body %}
+    {# ----------------------- #}
+    {# ---      HERO BANNER #}
+    {# ----------------------- #}
+
+    {# Hero Banner Style #}
     <link rel="stylesheet" href="{{ asset("assets/css/hero.css") }}" type="text/css">
+
+    {# Hero Banner HTML #}
     <div id="hero-banner">
         <div id="hero-text">
             <h2>Découvrez un nouveau café exotique</h2>
-            <p id="hero-description">L'arôme délicat de la noix de coco donne de la douceur au goût riche du café. Le duo exotique vous plongera
+            <p id="hero-description">L'arôme délicat de la noix de coco donne de la douceur au goût riche du café. Le
+                duo exotique vous plongera
                 dans l'atmosphère de vacances à la plage et vous transportera sur la côte paradisiaque.</p>
-            <a href="#" class="hero-btn">Voir la promotion</a>
+            <a href="#" class="hero-btn button-shadow">Voir la promotion</a>
         </div>
     </div>
     <div id="hero-banner-mobile">
         <h2>
             Les cafés du moment...
         </h2>
+    </div>
+
+
+    {# ----------------------- #}
+    {# ---      CATEGORIES     #}
+    {# ----------------------- #}
+
+    {# Categories Style #}
+    <link rel="stylesheet" href="{{ asset("assets/css/categories.css") }}" type="text/css">
+
+    {# Categories HTML #}
+    <div id="categorie-container">
+        {% for categorie in categories %}
+            <div class="category-card">
+                <h2 class="cat-title">
+                    {{ categorie.nomCategorie }}
+                </h2>
+                <p class="cat-description">
+                    {{ categorie.descCategorie }}
+                </p>
+                <button class="cat-btn button-shadow">
+                    Details
+                </button>
+                <img src="{{ asset(categorie.categorieImage) }}" alt="Image de description de la categorie" class="cat-img">
+            </div>
+        {% endfor %}
     </div>
 
 

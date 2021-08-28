@@ -57,7 +57,7 @@
                              alt="Cliquez ici pour ouvrir la navigation mobile"></a>
         </div>
         <div class="nav-left">
-            <ul><a href="#" class="first-nav-item" id="main-logo">Café<span class="accent-brow">.com</span></a></ul>
+            <ul><a href="{{ path("home") }}" class="first-nav-item" id="main-logo">Café<span class="accent-brow">.com</span></a></ul>
         </div>
         <div class="to-hide">
             <ul class="nav-center">
@@ -120,28 +120,31 @@
 
 {% block body %}{% endblock %}
 
-{# Footer CSS #}
-<link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
-<footer id="main-footer">
-    <h2 class="footer-title">Recevez l’actualité café.com par e-mail</h2>
-    <p class="footer-subtitle">Inscrivez-vous ici</p>
-    {{ form_start(email_form) }}
-    <div class="footer-input">
-        {{ form_widget(email_form.email ) }}
-        <button type="submit" class="footer-submit">S'abonner</button>
-    </div>
-    {{ form_end(email_form) }}
-    <p class="footer-small">En cliquant sur S'abonner vous acceptez <br> les <a href="#" class="underline-a">conditions
-            d'utilisations.</a></p>
-    <div id="footer-links">
-        <ul>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Charte de protection</a></li>
-            <li><a href="#">Recrutement</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </div>
-</footer>
+{% if email_form is defined %}
+    {# Footer CSS #}
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+
+    <footer id="main-footer">
+        <h2 class="footer-title">Recevez l’actualité café.com par e-mail</h2>
+        <p class="footer-subtitle">Inscrivez-vous ici</p>
+        {{ form_start(email_form) }}
+        <div class="footer-input">
+            {{ form_widget(email_form.email ) }}
+            <button type="submit" class="footer-submit">S'abonner</button>
+        </div>
+        {{ form_end(email_form) }}
+        <p class="footer-small">En cliquant sur S'abonner vous acceptez <br> les <a href="#" class="underline-a">conditions
+                d'utilisations.</a></p>
+        <div id="footer-links">
+            <ul>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Charte de protection</a></li>
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </footer>
+{% endif %}
 
 </body>
 </html>

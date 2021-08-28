@@ -1,0 +1,50 @@
+/*
+    Categories STYLE
+    PRESENT IN : template/home/index.html.twig
+*/
+
+/* --------------------------------------------------- */
+/* ----------------------------------- General styling */
+/* --------------------------------------------------- */
+
+#categorie-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.category-card {
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF6F1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 1rem;
+
+}
+
+.cat-title {
+    font-size: 36px;
+    padding: 1rem;
+}
+
+.cat-description {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.cat-btn {
+    background-color: #fff6f1;
+    color: #343131;
+    padding: 1rem;
+    margin: 1rem 6rem;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+

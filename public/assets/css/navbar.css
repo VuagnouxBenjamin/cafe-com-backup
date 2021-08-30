@@ -160,7 +160,7 @@
 #sidebar {
     position: absolute;
     top: 0px;
-    left: -900px;
+    left: -100vw;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -177,7 +177,8 @@
 
 #sidebar-window {
     width: 25vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 150ms ease 0ms;
 }
 
 #sidebar ul li {

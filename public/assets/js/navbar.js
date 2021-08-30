@@ -3,8 +3,7 @@ function showSidebar() {
 }
 
 function hideSidebar() {
-    document.querySelector("#sidebar").style.left = "-900px";
-
+    document.querySelector("#sidebar").style.left = "-100vw";
 }
 
 document.querySelector("#burger").addEventListener("click", showSidebar);

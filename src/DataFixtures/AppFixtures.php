@@ -12,9 +12,10 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        // initialising faker.
         $faker = Factory::create();
 
-
+        // name of the categories.
         $categorie_names = [
             'Océanie',
             'Inde',
@@ -24,15 +25,18 @@ class AppFixtures extends Fixture
             'Asie'
         ];
 
-        foreach($categorie_names as $name) {
+        // create new categorie
+        foreach ($categorie_names as $name) {
             $categories = new Categories();
             $categories->setNomCategorie($name)
                 ->setCategorieImage('images/categories/categories_img.png')
-                ->setDescCategorie('Hello Bonjour');
+                ->setDescCategorie($faker->sentences(2, true));
 
+//            Store the categorie in the $manager
             $manager->persist($categories);
 
-            for ($i = 0; $i < rand(20, 60) ; $i++) {
+//            Creating 20 to 60 products per categorie
+            for ($i = 0; $i < rand(20, 60); $i++) {
 
                 $product = new Produits();
 

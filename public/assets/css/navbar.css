@@ -160,12 +160,13 @@
 #sidebar {
     position: absolute;
     top: 0px;
+    left: -900px;
     height: 100vh;
-    width: 0vw;
+    width: 100vw;
     display: flex;
 
     overflow: hidden;
-    transition: width 150ms ease 0ms;
+    transition: left 150ms ease 0ms;
 }
 
 #sidebar-75 {

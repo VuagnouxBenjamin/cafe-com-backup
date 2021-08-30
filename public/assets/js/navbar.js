@@ -1,9 +1,9 @@
 function showSidebar() {
-    document.querySelector("#sidebar").style.width = "100vw";
+    document.querySelector("#sidebar").style.left = "0px";
 }
 
 function hideSidebar() {
-    document.querySelector("#sidebar").style.width = "0vw";
+    document.querySelector("#sidebar").style.left = "-900px";
 
 }
 

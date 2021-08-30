@@ -35,6 +35,7 @@
     font-size: 18px;
     text-align: left;
     padding: 0 2rem;
+    min-height: 66px;
 }
 
 .cat-btn {

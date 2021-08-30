@@ -157,7 +157,9 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
                 <img src=\"";
             // line 50
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["categorie"], "categorieImage", [], "any", false, false, false, 50)), "html", null, true);
-            echo "\" alt=\"Image de description de la categorie\" class=\"cat-img\">
+            echo "\" alt=\"Image de description de la categorie : ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["categorie"], "nomCategorie", [], "any", false, false, false, 50), "html", null, true);
+            echo "\" class=\"cat-img\">
             </div>
         ";
         }
@@ -166,7 +168,6 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 53
         echo "    </div>
-
 
 ";
         
@@ -189,7 +190,7 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
 
     public function getDebugInfo()
     {
-        return array (  168 => 53,  159 => 50,  151 => 45,  145 => 42,  141 => 40,  137 => 39,  134 => 38,  128 => 35,  125 => 33,  123 => 32,  121 => 31,  103 => 14,  97 => 11,  94 => 9,  92 => 8,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  170 => 53,  159 => 50,  151 => 45,  145 => 42,  141 => 40,  137 => 39,  134 => 38,  128 => 35,  125 => 33,  123 => 32,  121 => 31,  103 => 14,  97 => 11,  94 => 9,  92 => 8,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -243,11 +244,10 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
                 <button class=\"cat-btn button-shadow\">
                     Details
                 </button>
-                <img src=\"{{ asset(categorie.categorieImage) }}\" alt=\"Image de description de la categorie\" class=\"cat-img\">
+                <img src=\"{{ asset(categorie.categorieImage) }}\" alt=\"Image de description de la categorie : {{ categorie.nomCategorie }}\" class=\"cat-img\">
             </div>
         {% endfor %}
     </div>
-
 
 {% endblock %}
 ", "home/index.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/templates/home/index.html.twig");

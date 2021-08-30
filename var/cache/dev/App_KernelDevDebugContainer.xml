@@ -352,12 +352,6 @@
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
     </service>
-    <service id="App\DataFixtures\CategoriesFixtures" class="App\DataFixtures\CategoriesFixtures" autowire="true" autoconfigure="true">
-      <tag name="doctrine.fixture.orm"/>
-    </service>
-    <service id="App\DataFixtures\ProductFixtures" class="App\DataFixtures\ProductFixtures" autowire="true" autoconfigure="true">
-      <tag name="doctrine.fixture.orm"/>
-    </service>
     <service id="App\Form\MailListType" class="App\Form\MailListType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -5594,14 +5588,6 @@
             <argument key="fixture" type="service" id="App\DataFixtures\AppFixtures"/>
             <argument key="groups" type="collection"/>
           </argument>
-          <argument type="collection">
-            <argument key="fixture" type="service" id="App\DataFixtures\CategoriesFixtures"/>
-            <argument key="groups" type="collection"/>
-          </argument>
-          <argument type="collection">
-            <argument key="fixture" type="service" id="App\DataFixtures\ProductFixtures"/>
-            <argument key="groups" type="collection"/>
-          </argument>
         </argument>
       </call>
     </service>
@@ -5616,10 +5602,6 @@
     <service id=".abstract.instanceof.App\Controller\ProduitsController" class="App\Controller\ProduitsController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\CategoriesFixtures" class="App\DataFixtures\CategoriesFixtures" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\DataFixtures\CategoriesFixtures" class="App\DataFixtures\CategoriesFixtures" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\ProductFixtures" class="App\DataFixtures\ProductFixtures" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\DataFixtures\ProductFixtures" class="App\DataFixtures\ProductFixtures" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\MailListType" class="App\Form\MailListType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\MailListType" class="App\Form\MailListType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\ProduitsType" class="App\Form\ProduitsType" autowire="true" abstract="true"/>

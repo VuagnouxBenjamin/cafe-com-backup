@@ -25,7 +25,6 @@ class HomeController extends AbstractController
         $cat_repository = $em->getRepository(Categories::class);
         $categories = $cat_repository->findSixLast();
 
-
         // ------------------------------------
         // -------------                 FOOTER
         // ------------------------------------
@@ -40,7 +39,6 @@ class HomeController extends AbstractController
             $entityManager->persist($email_list);
             $entityManager->flush();
         }
-
 
         // ------------------------------------
         // -------------                 RENDER

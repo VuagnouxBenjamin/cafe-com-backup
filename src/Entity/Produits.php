@@ -154,7 +154,7 @@ class Produits
         return $this->categories;
     }
 
-    public function setCategories(?Categories $categories): self
+    public function setCategories(Categories $categories): self
     {
         $this->categories = $categories;
 

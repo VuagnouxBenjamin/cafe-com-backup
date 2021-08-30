@@ -47,10 +47,9 @@
                 <button class="cat-btn button-shadow">
                     Details
                 </button>
-                <img src="{{ asset(categorie.categorieImage) }}" alt="Image de description de la categorie" class="cat-img">
+                <img src="{{ asset(categorie.categorieImage) }}" alt="Image de description de la categorie : {{ categorie.nomCategorie }}" class="cat-img">
             </div>
         {% endfor %}
     </div>
-
 
 {% endblock %}

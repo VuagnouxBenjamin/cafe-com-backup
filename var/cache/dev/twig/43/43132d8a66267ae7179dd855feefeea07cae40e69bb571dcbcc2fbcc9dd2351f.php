@@ -1349,6 +1349,6 @@ class __TwigTemplate_a167e230a2404c3011358cd1d2833cc567de38e988bfc87f11b82f2e0b2
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/home/miguigno/Desktop/projet_cafe.com/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
     }
 }

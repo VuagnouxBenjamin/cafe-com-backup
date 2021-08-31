@@ -155,6 +155,6 @@ class __TwigTemplate_7ba52695d4d622b757dc59b0a62481bec1ecdc155e316e2d4df86fe64d9
 {% block panel %}
     {{ render(controller('web_profiler.controller.router::panelAction', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/home/miguigno/Desktop/projet_cafe.com/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

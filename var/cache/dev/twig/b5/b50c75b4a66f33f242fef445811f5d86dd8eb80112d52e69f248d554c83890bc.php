@@ -169,6 +169,86 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
         // line 53
         echo "    </div>
 
+    ";
+        // line 56
+        echo "    ";
+        // line 57
+        echo "    ";
+        // line 58
+        echo "
+    ";
+        // line 60
+        echo "    <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/app.css"), "html", null, true);
+        echo "\" type=\"text/css\">
+
+    ";
+        // line 63
+        echo "    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\" integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\" crossorigin=\"anonymous\">
+
+    ";
+        // line 66
+        echo "    <div id=\"App-container\">
+
+        ";
+        // line 69
+        echo "
+        <div id=\"App-link\">
+            <div id=\"App-text\">
+                <h2 id=\"titre-h2\">D&eacute;couvrez toutes les fonctionnalit&eacute;s de notre application !</h2>
+                <p id=\"App-description\">T&eacute;l&eacute;chargez-la vite et profites de 5% de remise suppl&eacute;mentaire sur
+                    votre prochain achat.</p>
+            </div>
+
+            ";
+        // line 78
+        echo "
+            <div id=\"App-button\">
+
+                ";
+        // line 82
+        echo "
+                <div id=\"App-qrcode\">
+                    <a href='https://www.unitag.io/qrcode'>
+                        <img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPpEYgrTpeQPpAxSJGcmyf1zqoOPAufHCjI4ccbj8leQIffpWitL50YSc%252FcPVAqhvQcY8L%252ByEXXE2GKn8SsxpZk4WZaQp7PKE7yfTgH2P3e9CKW00WL5%252F1cMS7FElOQtZuX8mpOG0vfXH1R11ooGrRdY%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJsoOCuw%252BX4ighugFhTGaFhdwMowFnzz1VqZrff9HkhEKAQ%253D%253D' alt='QR Code'/>
+                    </a>
+                </div>
+
+                <div id=\"App-column\">
+
+                    ";
+        // line 92
+        echo "
+                    <div id=\"text-button\">
+                        <p id=\"grey-text\">Visez le QR Code avec la cam&eacute;ra de votre smartphone et t&eacute;l&eacute;chargez l'application mobile gratuite.</p>
+                    </div>
+
+                    ";
+        // line 98
+        echo "
+                    <div id=\"App-container-icons\">
+                        <div class=\"button-icons\">
+                            <i  class=\"fab fa-apple icons\"></i>
+                            <a class=\"icons\" href=\"https://www.apple.com/fr/app-store/\" target=\"_blank\" title=\"app-store\">Download on the<br><span class=\"icons-bold\">App Store</span></a>
+                        </div>
+                        <div class=\"button-icons\">
+                            <i class=\"fab fa-google-play icons\"></i>
+                            <a class=\"icons\" href=\"https://play.google.com/store?gl=FR\"target=\"_blank\" title=\"google-play\">Get it on<br><span class=\"icons-bold\">Google Play</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        ";
+        // line 114
+        echo "
+        <div id=\"cafe_img\">
+            <img class=\"smartphone\" src=\"/images/app/portable.png\"  alt=\"img-portable\">
+        </div>
+    </div>
+
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -190,7 +270,7 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
 
     public function getDebugInfo()
     {
-        return array (  170 => 53,  159 => 50,  151 => 45,  145 => 42,  141 => 40,  137 => 39,  134 => 38,  128 => 35,  125 => 33,  123 => 32,  121 => 31,  103 => 14,  97 => 11,  94 => 9,  92 => 8,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  245 => 114,  228 => 98,  221 => 92,  210 => 82,  205 => 78,  195 => 69,  191 => 66,  187 => 63,  181 => 60,  178 => 58,  176 => 57,  174 => 56,  170 => 53,  159 => 50,  151 => 45,  145 => 42,  141 => 40,  137 => 39,  134 => 38,  128 => 35,  125 => 33,  123 => 32,  121 => 31,  103 => 14,  97 => 11,  94 => 9,  92 => 8,  90 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -249,7 +329,73 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
         {% endfor %}
     </div>
 
+    {# ----------------------- #}
+    {# ---      APP    ------- #}
+    {# ----------------------- #}
+
+    {# App Styles #}
+    <link rel=\"stylesheet\" href=\"{{ asset(\"assets/css/app.css\") }}\" type=\"text/css\">
+
+    {# Font Awesome link #}
+    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\" integrity=\"sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm\" crossorigin=\"anonymous\">
+
+    {# App Html #}
+    <div id=\"App-container\">
+
+        {# first upper left text #}
+
+        <div id=\"App-link\">
+            <div id=\"App-text\">
+                <h2 id=\"titre-h2\">D&eacute;couvrez toutes les fonctionnalit&eacute;s de notre application !</h2>
+                <p id=\"App-description\">T&eacute;l&eacute;chargez-la vite et profites de 5% de remise suppl&eacute;mentaire sur
+                    votre prochain achat.</p>
+            </div>
+
+            {# text Qr code and button#}
+
+            <div id=\"App-button\">
+
+                {# Qr Code #}
+
+                <div id=\"App-qrcode\">
+                    <a href='https://www.unitag.io/qrcode'>
+                        <img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPpEYgrTpeQPpAxSJGcmyf1zqoOPAufHCjI4ccbj8leQIffpWitL50YSc%252FcPVAqhvQcY8L%252ByEXXE2GKn8SsxpZk4WZaQp7PKE7yfTgH2P3e9CKW00WL5%252F1cMS7FElOQtZuX8mpOG0vfXH1R11ooGrRdY%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJsoOCuw%252BX4ighugFhTGaFhdwMowFnzz1VqZrff9HkhEKAQ%253D%253D' alt='QR Code'/>
+                    </a>
+                </div>
+
+                <div id=\"App-column\">
+
+                    {# Grey text bottom #}
+
+                    <div id=\"text-button\">
+                        <p id=\"grey-text\">Visez le QR Code avec la cam&eacute;ra de votre smartphone et t&eacute;l&eacute;chargez l'application mobile gratuite.</p>
+                    </div>
+
+                    {# link icons and textlink #}
+
+                    <div id=\"App-container-icons\">
+                        <div class=\"button-icons\">
+                            <i  class=\"fab fa-apple icons\"></i>
+                            <a class=\"icons\" href=\"https://www.apple.com/fr/app-store/\" target=\"_blank\" title=\"app-store\">Download on the<br><span class=\"icons-bold\">App Store</span></a>
+                        </div>
+                        <div class=\"button-icons\">
+                            <i class=\"fab fa-google-play icons\"></i>
+                            <a class=\"icons\" href=\"https://play.google.com/store?gl=FR\"target=\"_blank\" title=\"google-play\">Get it on<br><span class=\"icons-bold\">Google Play</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# img smartphone right #}
+
+        <div id=\"cafe_img\">
+            <img class=\"smartphone\" src=\"/images/app/portable.png\"  alt=\"img-portable\">
+        </div>
+    </div>
+
+
 {% endblock %}
-", "home/index.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/templates/home/index.html.twig");
+", "home/index.html.twig", "/home/miguigno/Desktop/projet_cafe.com/templates/home/index.html.twig");
     }
 }

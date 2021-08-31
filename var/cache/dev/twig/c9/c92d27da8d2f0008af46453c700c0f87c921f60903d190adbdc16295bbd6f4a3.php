@@ -471,6 +471,6 @@ class __TwigTemplate_1b04c860f5250378c25c3c34d7b9a3be7f11b24491604b5def240193d02
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
     }
 }

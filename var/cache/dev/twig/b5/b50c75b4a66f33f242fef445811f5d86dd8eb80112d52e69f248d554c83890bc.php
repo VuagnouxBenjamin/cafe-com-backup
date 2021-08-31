@@ -250,6 +250,6 @@ class __TwigTemplate_abc49deb31b6c9685acf6ddcb361b55ecd1ee5c8dcc780e170cd510cfac
     </div>
 
 {% endblock %}
-", "home/index.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/templates/home/index.html.twig");
+", "home/index.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/templates/home/index.html.twig");
     }
 }

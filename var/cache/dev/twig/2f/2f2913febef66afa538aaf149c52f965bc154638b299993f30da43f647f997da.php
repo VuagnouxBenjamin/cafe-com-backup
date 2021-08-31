@@ -1671,6 +1671,6 @@ class __TwigTemplate_e21c9916aa9039c583c825ef844f64d05d5af7b677aa8e952c39788fd8b
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

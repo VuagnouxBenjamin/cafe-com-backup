@@ -898,6 +898,6 @@ class __TwigTemplate_c6d2da9d742e2df3f2c340d17ad9e6eeef14af625fc8d9787a78b7e1e9f
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

@@ -1306,6 +1306,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 357), twig_c
         </table>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/home/benj/Bureau/Sites/SYMFONY/fil_rouge_cafe/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

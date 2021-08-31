@@ -803,6 +803,6 @@ class __TwigTemplate_53c13cafd9b8861aff12f629195b6d913646c2412692605bcee45b20e61
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/home/miguigno/Desktop/projet_cafe.com/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

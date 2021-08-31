@@ -1,0 +1,176 @@
+
+/*----------------------*/
+/*!*Main div(container)*!*/
+/*----------------------*/
+
+
+#App-container{
+    background-color: #EED8C1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:500px ;
+    padding: 0rem 5rem;
+    justify-content: space-around;
+
+}
+/*-----------------------*/
+/*!*Div text and button*!*/
+/*------------------------*/
+
+
+#App-link {
+    width:500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre-h2{
+    font-size: 36px;
+    color: #343131;
+    width: 90%;
+}
+
+#App-description{
+    font-size: 18px;
+    color: #343131;
+    margin: 2rem 0 3rem 0;
+}
+
+/*!*Div button and Qr code*!*/
+/*--------------------------*/
+
+#App-button {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#App-qrcode img{
+    max-width: 150px;
+}
+
+#App-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#grey-text{
+    color: #7F7F7F;
+    font-size: 18px;
+   padding-bottom: 1rem;
+}
+
+/*!*other container bottom*!*/
+/*--------------------------*/
+
+
+#App-container-icons{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.button-icons{
+    background-color: black;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: .2rem;
+    padding: .2rem;
+}
+
+/*!*class*!*/
+/*--------*/
+
+
+.icons {
+    color: white;
+    text-decoration: none !important;
+    font-size: 10px;
+}
+.icons-bold{
+    color: white;
+    font-size: 16px;
+
+}
+.fa-apple, .fa-google-play{
+    font-size : 35px !important;
+    padding: .5rem;
+}
+
+
+/*!*img smartphone*!*/
+/*------------------*/
+#cafe_img{
+   align-self: end;
+}
+.smartphone{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*---------------------*/
+/*!*Css media querries*!*/
+/*----------------------*/
+
+
+
+@media (max-width: 1190px) {
+    #App-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 0 0 0;
+    }
+    #App-link{
+        width: 400px;
+        text-align: center;
+    }
+    #titre-h2{
+        font-size: 34px;
+        width: 400px;
+        padding : 1rem 0 1rem 0;
+    }
+
+    #App-description{
+        display: none;
+    }
+    #App-button{
+        width: 400px;
+    }
+    #App-qrcode img{
+        max-width: 100px;
+    }
+    #grey-text{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .button-icons{
+        width: 100px;
+        height: 30px;
+    }
+    .fa-google-play, .fa-apple{
+        font-size: 18px !important;
+    }
+
+    .icons{
+        font-size: 8px;
+    }
+    .icons-bold{
+        font-size: 10px;
+    }
+    #cafe_img{
+        align-self: center;
+        width: max-content;
+    }
+    .smartphone{
+        width: 400px;
+        height: 350px;
+        padding-top: 1rem;
+    }
+}

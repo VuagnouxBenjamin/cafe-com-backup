@@ -227,6 +227,6 @@ class __TwigTemplate_5ba3cc9b96e9d530d8babe3430a8c59353838c6f8f815c109cad77d346b
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/home/benj/Bureau/fil_rouge/cafe-com-backup/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/home/miguigno/Desktop/projet_cafe.com/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }
